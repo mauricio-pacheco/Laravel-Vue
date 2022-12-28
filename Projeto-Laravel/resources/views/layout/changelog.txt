@@ -1,0 +1,210 @@
+*** Neon Theme - Changelog ***
+
+- Nov 05, 2015 v 2.0
+
+	IMPORTANT FIX: Compatibility with Safari 9.x on El Capitan and iOS9 added
+	
+	ADDED: Bootstrap 3.3.5 Support
+	ADDED: Better organized less files, moved to assets/less/ folder.
+	ADDED: Favicon.ico added in header of each file
+	ADDED: Retina ready images added to whole pages
+	ADDED: Git repository changes
+	
+	UPDATE: Bootstrap updated to v3.3.5
+	UPDATE: jQuery updated to latest version v1.11.3
+	UPDATE: DataTables updated to v1.10.9
+	UPDATE: GSAP Animation Library updated to latest version v1.18.0
+	UPDATE: HTML5shiv updated to latest version v3.7.2
+	UPDATE: moment.js library updated to latest version v2.10.6
+	UPDATE: jQuery Validate library updated to v1.14.0
+	UPDATE: jQuery Knobs library updated to v1.2.11
+	UPDATE: FontAwesome updated to v4.4
+	UPDATE: Input Mask updated v3.2.2
+	
+	FIX: Top menu in mobile devices
+	FIX: Neon Chat API issues with its own API
+	FIX: Menu break on different viewports (mostly on iPad)
+	FIX: Menu items that have submenus now have "has-sub" class
+	FIX: Tile boxes in dashboard not aligned properly in mobile screens
+	FIX: Reported responsive issues on all pages
+	FIX: Forgot password form not allowing two (or more) dots after @ character
+
+	=== NOTE TO BUYERS ===
+
+	As you see we are continuously updating Neon with new features,
+	updates, compatibility issues with other plugins and other things 
+	even that it has been time that we created this Admin Theme.
+	
+	When any client rate us with low stars we think that it will not
+	contribute so much on our product improvement.
+	
+	We kindly ask you if you can increase your rating on our theme. 
+	If not, at least tell us what we need to improve to make our product
+	more sophisticated to meet your needs.
+	
+	Hope that you will reconsider your rating :)
+	
+	
+	=== ACCESS TO GIT FILES ===
+	
+	If you want access to private repository of Neon Git files you must
+	contact us in our forum (ThemeForest) and ask for invite in BitBucket.org
+	
+	There is a limited number of invites (only 5) but we are going to remove
+	the old invites to make new place for new invites.
+
+
+- Jan 10, 2015 v 1.9
+
+	FIX: Fixed Sidebar menu in smartphones not showing properly
+	
+	
+- Dec 10, 2014 v 1.8
+	
+	ADDED: FullCalendar version 2.3.2 (extra-calendar-2.html)
+	ADDED: Detailed comments which scripts are included in pages (screenshot: http://cl.ly/YtEX)
+	ADDED: New skin added (skins-facebook.html)
+	
+	FIX: Cleaner HTML content and correctly indented with tabs
+	FIX: Rebuild of core layout with pure CSS, doesn't need the JS to set the height anymore
+	FIX: When using fixed sidebar the browser outline is removed
+	FIX: Horizontal menu not showing properly in fixed mode (perspective issues)
+	FIX: Improved animation performances
+	FIX: Overall theme polishing (CSS + JavaScript)
+	
+	UPDATE: Updated scripts: Select2 (3.4.5 -> 3.5.2), jQuery Validate (1.11.1 -> 1.13.1), jQuery Transit (0.9.9 -> 0.9.12)
+
+
+- May 19, 2014 v 1.7.2
+
+	FIX: Datepicker in Dropdown Modal now its visible on the layer
+
+
+- Mar 28, 2014 v 1.7.1
+
+	FIX: Fixed sidebar issue window height
+
+
+- Mar 28, 2014 v 1.7
+	
+	ADDED: Boxed Layout support
+	ADDED: Members page (extra-members.html)
+	ADDED: Comments page (extra-comments.html)
+	ADDED: New post page (extra-new-post.html)
+	ADDED: Settings page (extra-settings.html)
+	ADDED: Nested list plugin (extra-nestable.html)
+	ADDED: File tree plugin (extra-file-tree.html)
+	ADDED: Progress indicator (extra-load-progress.html)
+	ADDED: New front-end mobile menu
+	
+	FIX: Better organized assets files
+
+
+- Mar 25, 2014 v 1.6
+
+	ADDED: Tabs in XS mode will display icons instead of text (ui-tabs-accordions.html)
+	
+	FIX: Group tile with stats now its properly aligned, Firefox background tiles that are pushed little lower (ui-tiles.html)
+	FIX: When opening modals will not bounce the page content container (ui-modals.html)
+	FIX: (CSS) IE fixes
+	FIX: RTL logo on Navbar
+	FIX: Front-end carousel issue in Safari
+	FIX: $.noConflict() - Neon will no longer have issues with this declaration
+	FIX: (CSS) DataTable width when sidebar is collapsed/expanded
+	FIX: (CSS) DataTable Rows per page broken width
+	FIX: Modals not opening in firefox (ui-modals.html)
+	
+	ADDED: Tabs will have icons in responsive (XS-mode, file: ui-tabs-accordions.html)
+
+
+- Feb 13, 2014 v 1.5.1
+
+	FIX: Fixed CSS Issues
+	FIX: Data folder missing
+
+
+- Feb 12, 2014 v 1.5.0
+	
+	ADDED: Front-end Interface
+	ADDED: Neon is now upgraded to Bootstrap 3.1
+	ADDED: Full RTL Support
+	ADDED: Sidebar position on the right (+Chat left)
+	ADDED: CSS files are now separated into groups for to decrease load size
+	ADDED: 10 new PSD files
+	ADDED: New Dashboard Page (dashboard-3.html)
+	
+	FIX: Firefox issues fixed
+
+
+- Jan 31, 2014 v 1.1.4
+	
+	ADDED: Register form page (extra-register.html)
+	ADDED: Forgot password form page (extra-forgot-password.html)
+	ADDED: Login form processing with PHP (extra-login.html and data/sample-login-form.php)
+	ADDED: Search Result page added (extra-search.html)
+	ADDED: UIKit Markdown editor (forms-wysiwyg.html)
+	ADDED: iCheck replacement for radio buttons and checkboxes (forms-icheck.html)
+	ADDED: Language select bar
+	ADDED: Input spinner (forms-advanced.html)
+	ADDED: Alternative Social networks login buttons on Login page (extra-login.html)
+	
+	FIX: Time picker in popup not showing the time popup selector
+	FIX: Sidebar issue "Flash of unstyle content"
+	FIX: Fixed Sidebar page, collapsed sidebar menu hover don't work
+	FIX: Fixed lot of reported CSS incosistencies
+	FIX: Fixed collapsing effect with tables as panel body
+	FIX: Chat conversation, auto-close when collapsing chat container
+	
+	UPDATE:  jQuery updated to latest public version
+
+
+- Jan 9, 2014 v 1.1.3
+	
+	ADDED: Theme Skins are now supported! Available skins: Blue, Red, Green, Purple, Black, White, Yellow, Cafe
+	ADDED: DataTables examples: Filtering Columns, Data Exporting, Responsive Data Tables
+	ADDED: Image Crop plugin is now added - See extra-image-crop.html
+	ADDED: 3 PSD files are included in extra/ folder
+
+
+- Jan 6, 2014 v 1.1.2
+	
+	ADDED: Profile Page added (extra-profile.html)
+	ADDED: Timeline - vertical left aligned (extra-timeline.html)
+	ADDED: Responsive tables (tables-main.html)
+	
+	FIX: Charts page will not render properly the profile notification tooltips.
+	FIX: Improved Retina Support for logos and images
+
+
+- Jan 5, 2014 v 1.1.1
+	
+	ADDED: Gallery Albums Page (extra-gallery.html)
+	ADDED: Gallery Album Single Page (extra-gallery-single.html)
+
+
+- Jan 3, 2014 v 1.1.0
+	
+	ADDED: User Info on Sidebar + Popup Menu
+	ADDED: Notes Page functionality added on extra-notes.html - You can save notes. Handle file assets/js/neon-notes.js
+	
+	FIX: WYSIHTML5 editor - text colors now are applied properly. Attribute [data-stylesheet-url] solves this.
+	FIX: Sliders (forms-sliders.html) are now compatible with Touch Devices.
+
+
+- Jan 1, 2014 v 1.0.2
+
+	FIX: Calendar Week and Day Agenda not styled properly
+
+
+- Dec 22, 2013	v 1.0.1
+
+	FIX: Overall fixes and improvements
+	FIX: Fail-safe page transitions are added.
+	ADDED: Modals are now shown in better way (ui-modals.html)
+	ADDED: Dropzone now shows info for uploaded files (forms-file-upload.html)
+	
+
+- Dec 20, 2015 v 1.0 -
+
+	First Release
+	P.S: Great things soon to come =)
