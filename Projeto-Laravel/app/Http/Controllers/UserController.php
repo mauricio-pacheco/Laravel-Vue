@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-   public function show()
+   public function show(User $user)
    {
-    return view('\layout\html\neon\index');
+    return view('/layout/html/neon/index', [
+      'user' => $user
+    ]);
+
+   
    }
 }

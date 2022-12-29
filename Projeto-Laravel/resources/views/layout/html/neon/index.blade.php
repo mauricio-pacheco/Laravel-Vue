@@ -572,13 +572,15 @@
 		
 		<hr />
 		
-		
+		<!-- CONTEÚDO DA PÁGINA -->
+
+		<div>Página de Teste</div>
 		
 	
 		
 		<footer class="main">
 			
-			&copy; 2023 <strong>Maurício Pacheco</strong>
+			&copy; 2023 <strong>{{ $user->name }}</strong>
 		
 		</footer>
 	</div>
