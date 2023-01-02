@@ -10,7 +10,8 @@ class UserController extends Controller
    public function show(User $user)
    {
     return view('/layout/html/neon/index', [
-      'user' => $user
+      'nome' => 'Maurício Pacheco'
+      //'user' => $user
     ]);
 
    

@@ -580,7 +580,7 @@
 		
 		<footer class="main">
 			
-			&copy; 2023 <strong>{{ $user->name }}</strong>
+			&copy; 2023 <strong>{{ $nome }}</strong>
 		
 		</footer>
 	</div>

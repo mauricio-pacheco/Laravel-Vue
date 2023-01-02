@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //LINKAR UM CONTROLLER
-Route::get('/principal/{user}', [UserController::class, 'show']);
+Route::get('/principal', [UserController::class, 'show']);
 
 Route::get('/', function () {
     return view('welcome');
