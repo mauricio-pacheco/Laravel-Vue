@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\PrincipalController;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -16,55 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//LINKAR UM CONTROLLER
-Route::get('/principal', [UserController::class, 'show']);
-
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+//CONTROLLER -> PÁGINA PRINCIPAL
+Route::get('/principal', [PrincipalController::class, 'show']);
 
 
 
-/*
-//USANDO REQUEST
-Route::get('/request', function (Request $request) {
-    //$r = $request->all();
-    
-    //Verifica se o Campo é Preenchido
-    $r = $request->whenFilled('keyword', function($input) {
-        dd('x', $input);
-    });
-
-
-    //dd($request);
-    return 'x';
-});
-
-Route::get('/user/{user}', function (User $user) {
-    dd($user);
-    return $user;
-})->name('user');
-
-//GRUPO DE ROTAS
-Route::prefix('usuarios')->group(function() {
-
-Route::get('', function() {
-    return 'usuário';
-})->name('usuarios');
-
-Route::get('/{id}', function() {
-    return 'Mostrar Detalhes';
-})->name('usuarios.show');
-
-Route::get('/{id}/tags', function() {
-    return 'Tags do Usuário';
-})->name('usuarios.tags');
-
-});
-
-//ABRIR NOME DA PÁGINA SEM A /
-Route::get('/empresa/{string?}', function ($string = null) {
-    return $string;
-    //return view('welcome');
-})->name('empresa');
-*/

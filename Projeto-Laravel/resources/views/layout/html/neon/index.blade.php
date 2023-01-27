@@ -5,12 +5,12 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Maurício Pacheco - Primeiro Projeto Laravel" />
+	<meta name="description" content="{{ $descricao_pagina }}" />
 	<meta name="author" content="" />
 
 	<link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
 
-	<title>Maurício Pacheco - Primeiro Projeto Laravel</title>
+	<title>{{ $titulo_pagina }}</title>
 
 	<link rel="stylesheet" href="{{ asset('assets/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/font-icons/entypo/css/entypo.css') }}">
@@ -33,9 +33,722 @@
 
 
 </head>
-<body class="page-body  page-fade">
+<body class="page-body page-fade-only">
 
-<div class="page-container">
+<div class="page-container horizontal-menu with-sidebar">
+
+    <header class="navbar navbar-fixed-top">
+
+        <div class="navbar-inner">
+
+            <!-- logo -->
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="assets/images/logo@2x.png" width="88" alt="" />
+                </a>
+            </div>
+
+
+            <!-- main menu -->
+
+            <ul class="navbar-nav">
+                <li class="has-sub">
+                    <a href="index.html">
+                        <i class="entypo-gauge"></i>
+                        <span class="title">Menu 1</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                          <li class="has-sub">
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link Badge</span>
+                                        <span class="badge badge-secondary badge-roundless">Novo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                                <span class="badge badge-success badge-roundless">v2.0</span>
+                            </a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">
+                                <span class="title">Sub menus</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="entypo-flow-line"></i>
+                                        <span class="title">Menu Level 1.1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="entypo-flow-line"></i>
+                                        <span class="title">Menu Level 1.2</span>
+                                    </a>
+                                </li>
+                                <li class="has-sub">
+                                    <a href="#">
+                                        <i class="entypo-flow-line"></i>
+                                        <span class="title">Menu Level 1.3</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="entypo-flow-parallel"></i>
+                                                <span class="title">Menu Level 2.1</span>
+                                            </a>
+                                        </li>
+                                        <li class="has-sub">
+                                            <a href="#">
+                                                <i class="entypo-flow-parallel"></i>
+                                                <span class="title">Menu Level 2.2</span>
+                                            </a>
+                                            <ul>
+                                                <li class="has-sub">
+                                                    <a href="#">
+                                                        <i class="entypo-flow-cascade"></i>
+                                                        <span class="title">Menu Level 3.1</span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="entypo-flow-branch"></i>
+                                                                <span class="title">Menu Level 4.1</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="entypo-flow-cascade"></i>
+                                                        <span class="title">Menu Level 3.2</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="entypo-flow-parallel"></i>
+                                                <span class="title">Menu Level 2.3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="opened active has-sub">
+                    <a href="#">
+                        <i class="entypo-layout"></i>
+                        <span class="title">Menu 2</span>
+                    </a>
+                    <ul class="visible">
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span class="title">Link Cor</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">
+                                <span class="title">Sub menu</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#">
+                        <i class="entypo-newspaper"></i>
+                        <span class="title">Menu 3</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">
+                                <span class="title">Sub menu</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#">
+                        <i class="entypo-doc-text"></i>
+                        <span class="title">Menu 4</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms-wysiwyg.html">
+                                <span class="title">Editors</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="#">
+                        <i class="entypo-bag"></i>
+                        <span class="title">Menu 5</span>
+                        <span class="badge badge-secondary">9</span>
+                    </a>
+                    <ul>
+                        <li class="has-sub">
+                            <a href="#">
+                                <span class="title">Link Badge</span>
+                                <span class="badge badge-success">3</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="title">Link</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Link</span>
+                            </a>
+                        </li>
+                     </ul>
+                </li>
+            </ul>
+
+
+            <!-- notificações e outros links -->
+            <ul class="nav navbar-right pull-right">
+
+                <!-- menu dropdown -->
+                <li class="dropdown hidden-xs">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="entypo-list"></i>
+                        <span class="badge badge-info">6</span>
+                    </a>
+
+                    <!-- menu dropdown -->
+                    <ul class="dropdown-menu">
+                        <li class="top">
+                            <p>Você possue 6 pendências</p>
+                        </li>
+
+                        <li>
+                            <ul class="dropdown-menu-list scroller">
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 1</span>
+					<span class="percent">27%</span>
+				</span>
+
+                                        <span class="progress">
+					<span style="width: 27%;" class="progress-bar progress-bar-success">
+						<span class="sr-only">27% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 2</span>
+					<span class="percent">83%</span>
+				</span>
+
+                                        <span class="progress progress-striped">
+					<span style="width: 83%;" class="progress-bar progress-bar-danger">
+						<span class="sr-only">83% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 3</span>
+					<span class="percent">91%</span>
+				</span>
+
+                                        <span class="progress">
+					<span style="width: 91%;" class="progress-bar progress-bar-success">
+						<span class="sr-only">91% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 4</span>
+					<span class="percent">12%</span>
+				</span>
+
+                                        <span class="progress progress-striped">
+					<span style="width: 12%;" class="progress-bar progress-bar-warning">
+						<span class="sr-only">12% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 5</span>
+					<span class="percent">54%</span>
+				</span>
+
+                                        <span class="progress progress-striped">
+					<span style="width: 54%;" class="progress-bar progress-bar-info">
+						<span class="sr-only">54% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+				<span class="task">
+					<span class="desc">Pendência 6</span>
+					<span class="percent">17%</span>
+				</span>
+
+                                        <span class="progress progress-striped">
+					<span style="width: 17%;" class="progress-bar progress-bar-important">
+						<span class="sr-only">17% Complete</span>
+					</span>
+				</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="external">
+                            <a href="#">Visualizar todas as pendências.</a>
+                        </li>					</ul>
+
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="entypo-mail"></i>
+                        <span class="badge badge-secondary">10</span>
+                    </a>
+
+                    <!-- menu dropdown -->
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form class="top-dropdown-search">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Pesquisar..." name="s" />
+                                </div>
+
+                            </form>
+
+                            <ul class="dropdown-menu-list scroller">
+                                <li class="active">
+                                    <a href="#">
+				<span class="image pull-right">
+					<img src="assets/images/thumb-1@2x.png" width="44" alt="" class="img-circle" />
+				</span>
+
+                                        <span class="line">
+					<strong>Pessoa 1</strong>
+					- ontem
+				</span>
+
+                                        <span class="line desc small">
+					Texto da Mensagem.
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="active">
+                                    <a href="#">
+				<span class="image pull-right">
+					<img src="assets/images/thumb-1@2x.png" width="44" alt="" class="img-circle" />
+				</span>
+
+                                        <span class="line">
+					<strong>Pessoa 2</strong>
+					- 2 dias atrás
+				</span>
+
+                                        <span class="line desc small">
+                    Texto da Mensagem.
+				</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+				<span class="image pull-right">
+					<img src="assets/images/thumb-1@2x.png" width="44" alt="" class="img-circle" />
+				</span>
+
+                                        <span class="line">
+					Pessoa 3
+					- uma semana atrás
+				</span>
+
+                                        <span class="line desc small">
+                    Texto da Mensagem.
+				</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+				<span class="image pull-right">
+					<img src="assets/images/thumb-1@2x.png" width="44" alt="" class="img-circle" />
+				</span>
+
+                                        <span class="line">
+					Pessoa 4
+					- 16 dias atrás
+				</span>
+
+                                        <span class="line desc small">
+                    Texto da Mensagem.
+				</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="external">
+                            <a href="mailbox.html">Todas as mensagens.</a>
+                        </li>					</ul>
+
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <i class="entypo-globe"></i>
+                        <span class="badge badge-warning">1</span>
+                    </a>
+
+                    <!-- menu dropdown -->
+                    <ul class="dropdown-menu">
+                        <li class="top">
+                            <p class="small">
+                                <a href="#" class="pull-right">Marcar todas como lidas.</a>
+                                Você possue <strong>3</strong> novas notificações.
+                            </p>
+                        </li>
+
+                        <li>
+                            <ul class="dropdown-menu-list scroller">
+                                <li class="unread notification-success">
+                                    <a href="#">
+                                        <i class="entypo-user-add pull-right"></i>
+
+                                        <span class="line">
+					<strong>Notificação 1</strong>
+				</span>
+
+                                        <span class="line small">
+					30 segundos atrás
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="unread notification-secondary">
+                                    <a href="#">
+                                        <i class="entypo-heart pull-right"></i>
+
+                                        <span class="line">
+					<strong>Notificação 2</strong>
+				</span>
+
+                                        <span class="line small">
+					2 minutos atrás
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="notification-primary">
+                                    <a href="#">
+                                        <i class="entypo-user pull-right"></i>
+
+                                        <span class="line">
+					<strong>Notificação 3</strong>
+				</span>
+
+                                        <span class="line small">
+					3 horas atrás
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="notification-danger">
+                                    <a href="#">
+                                        <i class="entypo-cancel-circled pull-right"></i>
+
+                                        <span class="line">
+                                            Notificação 4
+				</span>
+
+                                        <span class="line small">
+					9 horas atrás
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="notification-info">
+                                    <a href="#">
+                                        <i class="entypo-info pull-right"></i>
+
+                                        <span class="line">
+                                            Notificação 5
+				</span>
+
+                                        <span class="line small">
+					ontem as 10:30 Hs
+				</span>
+                                    </a>
+                                </li>
+
+                                <li class="notification-warning">
+                                    <a href="#">
+                                        <i class="entypo-rss pull-right"></i>
+
+                                        <span class="line">
+                                            Notificação 6
+				</span>
+
+                                        <span class="line small">
+					semana passada
+				</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="external">
+                            <a href="#">Visualizar todas as notificações.</a>
+                        </li>					</ul>
+
+                </li>
+
+                <!-- raw links -->
+                <li class="dropdown">
+                <li>
+                    <a href="#">Live Site</a>
+                </li>
+                </li>
+
+                <li class="sep"></li>
+
+                <li>
+                    <a href="extra-login.html">
+                        Log Out <i class="entypo-logout right"></i>
+                    </a>
+                </li>
+
+
+                <!-- mobile only -->
+                <li class="visible-xs">
+
+                    <!-- open/close menu icon (do not remove if you want to enable menu on mobile devices) -->
+                    <div class="horizontal-mobile-menu visible-xs">
+                        <a href="#" class="with-animation"><!-- add class "with-animation" to support animation -->
+                            <i class="entypo-menu"></i>
+                        </a>
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
 	
 	<div class="sidebar-menu">
 
