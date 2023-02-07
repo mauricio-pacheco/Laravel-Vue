@@ -1,0 +1,15 @@
+Instale o pacote
+composer require lucascudo/laravel-pt-br-localization --dev
+
+Publique as traduções
+php artisan vendor:publish --tag=laravel-pt-br-localization
+
+Configure o Framework para utilizar 'pt-BR' como linguagem padrão
+
+// Altere Linha 85 do arquivo config/app.php para:
+'locale' => 'pt-BR',
+
+Caso deseje, configure o Framework para utilizar 'America/Sao_Paulo' como data hora padrão
+
+// Altere Linha 72 do arquivo config/app.php para:
+'timezone' => 'America/Sao_Paulo',

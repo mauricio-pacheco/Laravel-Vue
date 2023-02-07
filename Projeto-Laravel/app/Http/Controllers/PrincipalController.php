@@ -8,19 +8,11 @@ use Illuminate\Http\Request;
 class PrincipalController extends Controller
 {
 
-    public function show(User $user)
+    public function show()
     {
-     return view('/layout/html/neon/index', [
-      
-      //Valores das STRINGS principais
-       'titulo_pagina' => 'Supermercados - Casa da Web ',
-       'descricao_pagina' => 'Supermercados - Casa da Web ',
-       'nome' => 'Maurício Pacheco'
-       
+     return view('index', [
        //'user' => $user
      ]);
- 
-    
     }
 
 }
